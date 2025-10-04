@@ -17,3 +17,6 @@ And install pre-commit hooks:
 ```bash
 pre-commit install
 ```
+
+## Tests
+A dummy test is included but should be removed and use your own tests. This is only for the github actions can work.
