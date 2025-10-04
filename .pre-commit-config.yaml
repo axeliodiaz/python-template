@@ -1,0 +1,8 @@
+# Pre-commit configuration for this repository
+# Runs Black for formatting on commit
+
+repos:
+  - repo: https://github.com/psf/black
+    rev: 24.8.0
+    hooks:
+      - id: black
