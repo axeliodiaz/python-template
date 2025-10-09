@@ -80,3 +80,21 @@ A dummy test is included under tests/ as a placeholder—replace it with real te
 
 ## CI
 This template is suitable for plugging into CI to run linting and tests. The included dummy test exists so CI pipelines can execute successfully out of the box; replace it as soon as you add real code.
+
+## Run with Docker
+You can use Docker to build and run the project without setting up a local Python environment.
+
+Prerequisites: Docker Desktop or a compatible Docker Engine installed and running.
+
+Basic usage:
+```bash
+# Build images defined in docker-compose.yml
+docker compose build
+
+# Start the services (will run pytest by default as defined in docker-compose.yml)
+docker compose up
+```
+
+Notes:
+- The docker-compose.yml mounts the project into /app and runs `pytest -q` by default.
+- Stop the stack with Ctrl+C (in the same terminal) or by running `docker compose down` in another terminal.
